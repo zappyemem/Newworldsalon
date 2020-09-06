@@ -12,7 +12,26 @@
     <!-- Loading main css file -->
     <link rel="stylesheet" href="css/style.css">
 		
-		
+	
+    
+    <script type="text/javascript">
+    (function() {
+        emailjs.init('user_JSOv1g8sUUWrvkUH6e8Jw');
+    })();
+    </script>
+    <script type="text/javascript">
+    window.onload = function() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // generate the contact number value
+            this.contact_number.value = Math.random() * 100000 | 0;
+            emailjs.sendForm('contact_service', 'contact_form', this);
+        })
+
+    }
+
+    </script>
+	
 
 	</head>
 
@@ -56,7 +75,7 @@
 
 						<div class="row">
 							<div class="col-md-5">
-								<form action="#" method="POST" id="contactForm" class="contact-form">
+								<form action="user_JSOv1g8sUUWrvkUH6e8Jw" method="POST" id="contactForm" class="contact-form">
 									<input type="text" id="name"  name="name" required="required" placeholder="Name...">
 									<input type="text" id="email"  name="email" required="required"  placeholder="Email...">
 									<textarea id="message"  name="message" required="required" placeholder="Message..."></textarea>
@@ -76,7 +95,7 @@
 										</address>
 										<div class="contact-info">
 											<a href="mailto:newworldsalon20@gmail.com" class="mail"><img src="images/icon-envelope-small.png" class="icon">newworldsalon20@gmail.com</a>
-											<a href="tel:4670000000" class="phone"><img src="images/icon-phone-small.png" class="icon">+4670000000</a>
+											<a href="tel:46764432058" class="phone"><img src="images/icon-phone-small.png" class="icon">+46764432058</a>
 										</div>
 									</div>
 								</div>
