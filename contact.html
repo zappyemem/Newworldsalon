@@ -11,29 +11,18 @@
 		type="text/css" />
     <!-- Loading main css file -->
     <link rel="stylesheet" href="css/style.css">
-		
-	
-    
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+              
     <script type="text/javascript">
     (function() {
         emailjs.init('user_JSOv1g8sUUWrvkUH6e8Jw');
-    })();
-    </script>
-    <script type="text/javascript">
-    window.onload = function() {
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            // generate the contact number value
-            this.contact_number.value = Math.random() * 100000 | 0;
-            emailjs.sendForm('contact_service', 'contact_form', this);
-        })
-
-    }
-
+        
+        })();
     </script>
 	
-
-	</head>
+    </head>
 
 
 	<body>
@@ -75,7 +64,7 @@
 
 						<div class="row">
 							<div class="col-md-5">
-								<form action="user_JSOv1g8sUUWrvkUH6e8Jw" method="POST" id="contactForm" class="contact-form">
+								<form method="POST" id="contactForm" class="contact-form">
 									<input type="text" id="name"  name="name" required="required" placeholder="Name...">
 									<input type="text" id="email"  name="email" required="required"  placeholder="Email...">
 									<textarea id="message"  name="message" required="required" placeholder="Message..."></textarea>
@@ -155,6 +144,7 @@
 					</div>
 				</div>
 			</footer>
+            <script src = "../sendEmail.js"></script>
 		</div>
 		
 		<script src="js/jquery-1.11.1.min.js"></script>
