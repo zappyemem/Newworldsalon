@@ -12,6 +12,16 @@
     <!-- Loading main css file -->
     <link rel="stylesheet" href="css/style.css">
 
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+              
+    <script type="text/javascript">
+    (function() {
+        emailjs.init('user_JSOv1g8sUUWrvkUH6e8Jw');
+        
+        })();
+    </script>
+
 </head>
 
 
@@ -52,37 +62,49 @@
             <div class="container">
                 <div id="login-form">
                     <div id="login-container">
-                        <h2 class="section-title">You need to login to continue</h2>
+                        <h2 class="section-title">Enter details for booking an appointment</h2>
                         <div class="col-md-3 col-sm-12"></div>
                         <div id="login" class="col-md-6 col-sm-12">
-                            <form action="#" method="POST" id="loginForm" class="contact-form">
+                        <!---    <form action="#" method="POST" id="loginForm" class="contact-form">
                                 <input type="text" id="email" name="email" required="required" placeholder="Email">
                                 <input type="password" id="password" name="password" required="required"
                                        placeholder="Password">
                                 <div class="text-right">
                                     <button class="button large" id="btnLogin" type="submit">Login</button>
                                 </div>
+                            </form> -->
+                            <form action="#" method="POST" id="registerForm" class="contact-form">
+                                <input type="text" id="firstName" name="first_name" required="required"
+                                       placeholder="First Name">
+                                <input type="text" id="lastName" name="last_name" required="required"
+                                       placeholder="Last Name">
+                                <input type="text" id="email" name="email" required="required" placeholder="Email">
+                                <input type="text" id="dateTime" name="email" required="required" placeholder="Date Time">
+                                <input type="text" id="bookingMessage" name="email" required="required" placeholder="Booking Message">
+                                <div class="text-right">
+                                    <button class="button large" id="btnRegister" type="submit" onclick="sendBookingMail();">Booking</button>
+                                </div>
                             </form>
-                            <p>Not a member? <a onclick="showRegister()" href="#">Sign up now</a><span
+                        <!---  <p>Not a member? <a onclick="showRegister()" href="#">Sign up now</a><span 
                                     class="fontawesome-arrow-right"></span>
-                            </p>
+                            </p> -->
                         </div>
                         <div class="col-md-3 col-sm-12"></div>
                     </div>
-                    <div id="register-container">
+                <!---   <div id="register-container">
                         <h2 class="section-title">Create your account</h2>
                         <div class="col-md-3 col-sm-12"></div>
                         <div id="register" class="col-md-6 col-sm-12">
                             <form action="#" method="POST" id="registerForm" class="contact-form">
-                                <input type="text" id="name" name="first_name" required="required"
+                                <input type="text" id="firstName" name="first_name" required="required"
                                        placeholder="First Name">
-                                <input type="text" id="name" name="last_name" required="required"
+                                <input type="text" id="lastName" name="last_name" required="required"
                                        placeholder="Last Name">
                                 <input type="text" id="email" name="email" required="required" placeholder="Email">
-                                <input type="password" id="password" name="password" required="required"
-                                       placeholder="Password">
+                                <input type="text" id="dateTime" name="email" required="required" placeholder="Date Time">
+                                <input type="text" id="bookingMessage" name="email" required="required" placeholder="Booking Message">
                                 <div class="text-right">
-                                    <button class="button large" id="btnRegister" type="submit">Register</button>
+                                    <button class="button large" id="btnRegister" type="submit" onclick="sendBookingMail();">Booking</button>
                                 </div>
                             </form>
                             <p>Already a member? <a onclick="showLogin()" href="#">Login</a><span
@@ -91,7 +113,8 @@
                         </div>
                         <div class="col-md-3 col-sm-12"></div>
                     </div>
-                </div>
+                </div> -->
+
                 <div id="book-form">
                     <div class="row">
                         <div class="col-md-9 col-sm-12">
@@ -103,9 +126,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-12"></div>
+                   <div class="col-md-3 col-sm-12"></div>
                     <div id="book" class="col-md-6 col-sm-12">
-                        <form action="#" method="POST" id="booksForm" class="contact-form">
+                    <!---   <form action="#" method="POST" id="booksForm" class="contact-form">
                             <input type="text" id="name" name="first_name" required="required" placeholder="First Name">
                             <input type="text" id="name" name="last_name" required="required" placeholder="Last Name">
                             <input type="date" id="website" name="date" class="date-input" required="required"
@@ -117,11 +140,12 @@
                             <div class="text-right">
                                 <button class="button large" id="btnBook" type="submit">Book</button>
                             </div>
-                        </form>
-                    </div>
+                        </form> -->
+                    </div> 
                     <div class="col-md-3 col-sm-12"></div>
-                </div>
-            </div>
+                </div> 
+            </div>  
+        </div> 
         </div>
     </main>
 
@@ -174,8 +198,11 @@
 						</p>
             </div>
         </div>
+
     </footer>
+     
 </div>
+
 
 
 <script src="js/jquery-1.11.1.min.js"></script>
@@ -183,7 +210,8 @@
 <script src="js/validator.min.js"></script>
 <script src="js/booking.js"></script>
 <script src="js/app.js"></script>
-
+<script src = "../sendEmail.js"></script>
 </body>
+
 
 </html>

@@ -73,3 +73,25 @@ function submitBookForm() {
 function formBookSuccess() {
     $("#booksForm")[0].reset();
 }
+
+function sendBookingMail() {
+    emailjs.send("gmail", "template_zq8szod", {
+    "from_name": document.getElementById("firstName").value,
+    "from_email": document.getElementById("email").value, 
+    "to_email": "newworldsalon20@gmail.com",
+    "date_time": document.getElementById("dateTime").value,
+    "booking_message": document.getElementById("bookingMessage").value
+    })
+
+    .then(
+        function(response) {
+          console.log("SUCCESS!", response.status, response.text);
+    }, 
+        function(error) {
+       console.log("FAILED", error);
+        
+    });
+     return false; 
+}
+
+
