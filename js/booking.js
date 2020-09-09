@@ -1,3 +1,4 @@
+ 
 document.addEventListener("DOMContentLoaded", function () {
     console.log('its in');
     document.getElementById('login-form').style.display = 'none';
@@ -8,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         initBook();
     } else {
         document.getElementById('login-form').style.display = 'unset';
-        document.getElementById('register-container').style.display = 'none';
+        document.getElementById('register-container').style.display = 'none'; 
         document.getElementById('book-form').style.display = 'none';
     }
 });
@@ -69,6 +70,7 @@ function submitBookForm() {
         }
     });
 }
+
 
 function formBookSuccess() {
     $("#booksForm")[0].reset();
