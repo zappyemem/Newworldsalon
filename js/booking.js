@@ -1,6 +1,5 @@
  
 document.addEventListener("DOMContentLoaded", function () {
-    console.log('its in');
     document.getElementById('login-form').style.display = 'none';
     document.getElementById('book-form').style.display = 'none';
     if (localStorage.getItem('newworld-user')) {
