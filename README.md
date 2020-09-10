@@ -209,6 +209,14 @@ How to run this project locally
                      
 To *************
 
+
+ # Manual Testing
+
+Below is a detailed account of all the manual testing that has been done to confirm all areas of the site work as expected.
+Testing undertaken on desktop
+All steps on desktop were repeated in browsers: Firefox, Chrome and Internet Explorer and on two different desktop screen sizes.
+Elements on every page
+
 **Testing:**
    
    This responsive and adapts to all sizes. The links on the navbar to the the sections have been tested and funtions well.
@@ -222,6 +230,78 @@ To *************
    These test have been done manually by me checking them out on the external website to ensure results are shown as expected. 
    - The Html test code - code was ran on the html testing site through W3C markup validation service website - https://validator.w3.org/,
    - Html viewer code beautify - https://codebeautify.org/htmlviewer/, 
+
+  
+**1.	Navbar:**
+
+- I clicked each link in the navbar to confirm that it leads to the correct page.
+o	I clicked on the three slides on the home page and it displays images as expected.
+
+
+**2.	Footer:**
+
+- I hover over links in the footer, confirm the color change animation works as expected.
+- I clicked all links in the footer, confirm that they take the user to the relevant pages within the site. Example, Facebook, Instagram and g-mail.
+- I clicked the facebook icon, confirm that it opens a new tab and takes the user to the newworldsalon facebook page.
+- I checked date of copyright information, confirm year displayed is same with the current year.
+- The email address has been tested to redirect the user to the email page when it is clicked.
+
+**Home Page**
+
+***1.	Home Slider***
+- I clicked slider buttons, confirm that they work as expected.
+- I confirmed image is cropped in an attractive way.
+
+***2.	Call to action buttons***
+
+- Hover over all buttons on the navbar, confirm the color change and shadow on hover appear as expected.
+- I checked that text are bold enough to read clear on the home page.
+
+***3.	Service page***
+- I checked that the salon’s names of main services are clearly visible for users to understand using icons as symbols. 
+- Since it is a unisex salon the price list has been displayed for the different services.
+- The children price is also clearly displayed.
+- The extra charge for booking is displayed too.
+
+***4.	Gallery page***
+- I checked that on clicking the show all available images on the gallery section are visible.
+- On clicking the women all available images for women are displayed accordingly.
+- On clicking on the men all available images for the men are displayed.
+- On clicking on the children all available images for the children are displayed accordingly.
+- All links have been tested to function as expected.
+
+***5.	Booking page***
+- I checked that the booking can be made easily.
+- The name and other details of the users’ function as expected and the messaged were received in the newworldsalon email address.
+- The booking button have been tested and functions as expected.
+
+***6.	About Page***
+- I checked that the image and information about the salon are cleary explained for the user to easily understand.
+
+***7.	Contact Page***
+- Go to the contact page. Confirm that the contact form is laid out as expected.
+- Confirmed that the user email address field is blank.
+- Send a complete form, confirm that the message is sent to my email address with all the information included.
+- Checked that the send message button works as expected.
+
+# Things to improve on:
+- When user try to send the form with no fields filled in, the user should be alerted is to fill in the required fields.
+- When user try to enter a non-email address into the email field, that the user should be alerted to fill in an email address.
+
+## Elements on every page
+**1.	Navbar**
+- When the user opens the website on mobile, confirm that the navbar is collapsed into a burger icon
+- Click the burger icon, confirm that the navbar list appears are expected.
+
+**2.	Footer**
+- Scroll to the bottom of the page, confirm that the footer contents is displayed as expected.
+- No content squashed or squeezed or disproportionate in size.
+- Confirm that all links and buttons in footer are easy to click on the smallest screen sizes.
+
+**3.	All sections**
+- Navigation to all sections on the site, check that the layout is as expected for the screen size.
+- Check that all buttons, menus, forms and other elements are the correct proportions and easily clickable.
+
 
 
 
