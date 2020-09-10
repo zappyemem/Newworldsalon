@@ -150,6 +150,13 @@ of our clients even before they finally become our members.
 
 •	To add the opening time in the About section
 
+**Icons:**
+
+There are some icons on the images I intend to use in the future which is why I left them. The icons are in two sizes one big(2x) and one small. 
+Information about the membership booking forms. 
+In the booking forms section, the idea is to provide a membership platform where users can register to become members by filling out several details. Then subsequently they can easily make their booking. This was the initial plan which I changed considering the need for a data base to store the data that would be provided (cloud). In the future I hope to add this part since this website would actually be hosted live and running for my future business.
+
+
 
 # Contents:
 
@@ -178,7 +185,7 @@ Were used to have a visual knowledge of what is expected or expressed. links whe
 
 **Libraries and tools:** Have been used to construct this project includes: 
 
-**Deployment of Peace Fitness website to GitHub:**
+**Deployment of newworldsalon website to GitHub:**
 
 How to run this project locally
 
@@ -207,7 +214,7 @@ How to run this project locally
 
 -  git push
                      
-To *************
+
 
 
  # Manual Testing
