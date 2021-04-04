@@ -129,10 +129,17 @@ sup {
 sub {
     bottom: -0.25em;
 }
-
+ #logo-img{
+    border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
 img {
     border: 0;
 }
+
+
 
 svg:not(:root) {
     overflow: hidden;
