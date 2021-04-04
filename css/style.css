@@ -85,6 +85,13 @@ b, strong {
 dfn {
     font-style: italic;
 }
+#bokadirekt{
+    color: red;
+}
+
+#bokadirekt-anchor{
+    color: red;
+}
 
 mark {
     background: #ff0;
@@ -129,8 +136,7 @@ sup {
 sub {
     bottom: -0.25em;
 }
- #logo-img{
-    border: 1px solid #ddd;
+ #logo-img{  
   border-radius: 4px;
   padding: 5px;
   width: 150px;
